@@ -534,7 +534,7 @@ img {
   }
 }
 
-.footer-container__block::last-child {
+.footer-container__block:last-child {
   margin-right: 0;
 }
 
@@ -561,6 +561,7 @@ img {
   .footer-cantainer__box {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
