@@ -56,7 +56,8 @@
   background-color: transparent;
 
   &::placeholder {
-    font-size: 14px;
+    font-size: 12px;
+    // font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
 
@@ -88,14 +89,18 @@
   color: var(--accent-color);
 }
 .check-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
+
 .check-text {
   span {
     width: 15px;
@@ -143,8 +148,9 @@
   padding: 10px 55px;
   margin: 0 auto;
   background-color: var(--accent-color);
-  min-width: 200px;
-  min-height: 50px;
+  max-width: 200px;
+  max-height: 50px;
+
   border-color: transparent;
 
   font-weight: 700;
