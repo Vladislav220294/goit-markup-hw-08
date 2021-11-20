@@ -1,6 +1,5 @@
 .logo {
   display: inline-block;
-  margin-right: 93px;
 
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -16,4 +15,7 @@
 }
 .logo-studio-black {
   color: black;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
