@@ -4,12 +4,10 @@
   border-bottom: 1px solid #ececec;
 }
 .header-container {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    // justify-content: start;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   @media screen and (min-width: 1200px) {
     justify-content: start;
   }
@@ -42,7 +40,7 @@
   &.main-page::after {
     position: absolute;
 
-    bottom: -35px;
+    bottom: -33px;
     left: 0;
 
     content: '';
