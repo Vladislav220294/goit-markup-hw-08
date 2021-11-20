@@ -33,6 +33,11 @@
             </svg></div>+38 096 111 11 11</a>
         </div>
     </div>
+    <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-btn__icon">
+            <use href="./image/sprite.svg#icon-menu"></use>
+        </svg>
+    </button>
 </header>
 <!-- Основной блок  -->
 <main>
@@ -234,5 +239,34 @@
         </div>
     </div>
 </footer>
+<div class="modal-menu__container js-menu-container" id="mobile-menu">
+    <button class="modal-menu__btn js-close-menu">
+        <svg class="modal-menu__icon">
+            <use href="./image/sprite.svg#icon-menu-close"></use>
+        </svg>
+    </button>
+    <ul class="modal-menu__list-nav list">
+        <li class="modal-menu__item-nav"><a href="./index.html" class="modal-menu__link-nav link">Студия</a></li>
+        <li class="modal-menu__item-nav"><a href="./portfolio.html" class="modal-menu__link-nav main-page link">Портфолио</a></li>
+        <li class="modal-menu__item-nav"><a href="" class="modal-menu__link-nav link">Контакты</a></li>
+    </ul>
+    <ul class="modal-menu__list-contacts list">
+        <li class="modal-menu__item-contacts"><a href="" class="modal-menu__link-contacts link">+38 096 111 11 11</a>
+        </li>
+        <li class="modal-menu__item-contacts"><a href="" class="modal-menu__link-contacts link">info@devstudio.com</a>
+        </li>
+    </ul>
+    <ul class="modal-menu__list-social list">
+        <li class="modal-menu__item-social"><a href="" class="modal-menu__link-social link">Instagram</a></li>
+        <li class="modal-menu__item-social"><a href="" class="modal-menu__link-social link">Twitter</a></li>
+        <li class="modal-menu__item-social"><a href="" class="modal-menu__link-social link">Facebook</a></li>
+        <li class="modal-menu__item-social"><a href="" class="modal-menu__link-social link">LinkedIn</a></li>
+    </ul>
+</div>
+<!-- <script src="./js/modal.js"></script> -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
