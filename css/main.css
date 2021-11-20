@@ -255,16 +255,24 @@ img {
 }
 
 .title-hero {
-  width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .title-hero {
+    font-size: 44px;
+    line-height: 1.36;
+    min-width: 696px;
+  }
 }
 
 .button.button-hero {
@@ -637,6 +645,12 @@ img {
   .projects-item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-item {
+    width: calc(100% / 3 - 30px);
   }
 }
 
