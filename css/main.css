@@ -123,9 +123,17 @@ img {
 }
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    justify-content: start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .header-container {
@@ -284,16 +292,46 @@ img {
 }
 
 .section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondary-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background-header.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-mob-1x-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 1600px;
   margin: 0 auto;
+  max-height: 400px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-mob-2x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-tablet-1x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-tablet-2x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-desktop-1x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-desktop-2x-min.jpg");
+  }
 }
 
 .title-hero {
@@ -388,25 +426,22 @@ img {
   height: 70px;
 }
 
-.responsibilities-title {
+.section.no-padding {
   display: none;
-  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1200px) {
-  .responsibilities-title {
+  .section.no-padding {
     display: block;
   }
 }
 
-.responsibilities-list {
-  display: none;
+.responsibilities-title {
+  margin-bottom: 50px;
 }
 
-@media screen and (min-width: 1200px) {
-  .responsibilities-list {
-    display: flex;
-  }
+.responsibilities-list {
+  display: flex;
 }
 
 .responsibilities-list__item:not(:last-child) {

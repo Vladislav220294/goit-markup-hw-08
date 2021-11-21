@@ -1,15 +1,21 @@
-.responsibilities-title {
+.section.no-padding {
   display: none;
-  margin-bottom: 50px;
   @media screen and (min-width: 1200px) {
     display: block;
   }
 }
+.responsibilities-title {
+  margin-bottom: 50px;
+  // display: none;
+  // @media screen and (min-width: 1200px) {
+  //   display: block;
+  // }
+}
 .responsibilities-list {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
+  display: flex;
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  // }
 }
 
 .responsibilities-list__item {
