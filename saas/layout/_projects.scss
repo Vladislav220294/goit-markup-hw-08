@@ -45,6 +45,8 @@
 }
 
 .projects-item {
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -76,6 +78,7 @@
 .project-animation-item {
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .project-animation-thumb {
   position: absolute;
@@ -93,6 +96,7 @@
   color: #ffffff;
 }
 .projects-block {
+  flex-grow: 1;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
