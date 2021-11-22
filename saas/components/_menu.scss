@@ -1,7 +1,7 @@
 .menu-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  // position: absolute;
+  // top: 10px;
+  // right: 10px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -19,6 +19,8 @@
   height: 40px;
 }
 .modal-menu__container {
+  // max-width: 480px;
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,9 +59,9 @@
   width: 18px;
   height: 18px;
 }
-.modal-menu__list-nav {
-  // margin-bottom: 302px;
-}
+// .modal-menu__list-nav {
+//   margin-bottom: 302px;
+// }
 .modal-menu__item-nav {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -68,19 +70,19 @@
 .modal-menu__link-nav.main-page {
   color: var(--accent-color);
   position: relative;
-  &::after {
-    position: absolute;
+  // &::after {
+  //   position: absolute;
 
-    bottom: 0;
-    left: 0;
+  //   bottom: 0;
+  //   left: 0;
 
-    content: ' ';
-    width: 100%;
-    height: 4px;
+  //   content: ' ';
+  //   width: 100%;
+  //   height: 4px;
 
-    background: #2196f3;
-    border-radius: 2px;
-  }
+  //   background: #2196f3;
+  //   border-radius: 2px;
+  // }
 }
 .modal-menu__link-nav {
   font-weight: 500;
