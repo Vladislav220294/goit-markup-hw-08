@@ -278,6 +278,7 @@ img {
 }
 
 .section-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -287,11 +288,14 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
 
 .section-hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: var(--secondary-background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-mob-1x-min.jpg");
@@ -323,6 +327,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background/overlay-desktop-1x-min.jpg");
   }
@@ -436,10 +442,6 @@ img {
   }
 }
 
-.responsibilities-title {
-  margin-bottom: 50px;
-}
-
 .responsibilities-list {
   display: flex;
 }
@@ -483,10 +485,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.team-title {
-  margin-bottom: 50px;
 }
 
 .team-list {
@@ -759,10 +757,6 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-}
-
-.clients-title {
-  margin-bottom: 50px;
 }
 
 .clients-list {
